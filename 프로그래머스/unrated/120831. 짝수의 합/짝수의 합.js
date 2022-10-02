@@ -1,11 +1,7 @@
 function solution(n) {
-    if (n === 1) {
-        return 0;
+    result = 0;
+    for (let i = 0; i < n+1; i+=2) {
+        result = result + i;
     }
-    if (n%2 === 1) {
-        n = n - 1
-    }
-    if (n >= 4) {
-        return (2+n) * (n/4)
-    } return 2;
+    return result;
 }
